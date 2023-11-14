@@ -18,7 +18,8 @@ def get_response(user_input, messages, response_container):
     response_container['response'] = completion.choices[0].message.content
 
 while True:
-    user_input = input("User: ")
+    user_input = input("\nUser: ")
+    print("")
     messages.append({"role": "user", "content": user_input})
 
     # Container for the response
